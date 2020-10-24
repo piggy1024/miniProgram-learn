@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "canvas 封装演示",
+  "usingComponents": {
+    "share-one": "../../components/share-moment/index",
+    "share-two": "../../components/share-detail/index",
+    "share-three": "../../components/share-award/index"
+  }
+}

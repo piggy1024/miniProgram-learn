@@ -1,0 +1,2 @@
+<van-button type="primary" size="large" class="myself" bindtap="self">上报我的健康信息</van-button>
+<van-button type="primary" size="large" class="others" bindtap="other">为他人上报健康状况</van-button>

@@ -1,0 +1,52 @@
+const checkbox = [{
+    value: 0,
+    name: '骚扰广告',
+    checked: false
+}, {
+    value: 1,
+    name: '黄色内容',
+    checked: false
+}, {
+    value: 2,
+    name: '暴力内容',
+    checked: false
+}, {
+    value: 3,
+    name: '恐怖主义',
+    checked: false
+}, {
+    value: 4,
+    name: '政治论困',
+    checked: false
+}, {
+    value: 5,
+    name: '造谣传谣',
+    checked: false
+}, {
+    value: 6,
+    name: '违法内容',
+    checked: false
+}, {
+    value: 7,
+    name: '侵权内容',
+    checked: false
+}, {
+    value: 8,
+    name: '诈骗信息',
+    checked: false
+}, {
+    value: 9,
+    name: '冒充他人',
+    checked: false
+}, {
+    value: 10,
+    name: '谩骂辱骂',
+    checked: false
+}, {
+    value: 11,
+    name: '其他内容',
+    checked: false
+}];
+module.exports = {
+    checkbox: checkbox
+}

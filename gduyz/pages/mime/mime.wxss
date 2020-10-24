@@ -1,0 +1,35 @@
+@import"../index/show.wxss";
+@import "../editor/editor.wxss";
+
+.page {
+    background: white;
+}
+
+.user-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-top {
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 4500;
+}
+
+.UCenter-bg {
+    background-size: cover;
+    height: 550rpx;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: 300;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    background-repeat:no-repeat;
+}

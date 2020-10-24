@@ -1,0 +1,83 @@
+/* pages/index6/index6.wxss */
+.topWrap {
+  display: flex;
+  flex-direction: row;
+
+  margin: 15rpx 15rpx;
+}
+
+.close {
+  margin: 0;
+  font-family: "黑体";
+  color: #888888;
+  font-size: 40rpx;
+  margin-left: 15rpx;
+  margin-right: 410rpx;
+}
+.public {
+  margin: 0;
+  font-family: "黑体";
+  color: #fff;
+  font-size: 40rpx;
+  background: #42ce25;
+  border-radius: 15rpx;
+}
+.allContent {
+  border: 1px solid rgb(110, 219, 59);
+}
+.type {
+  margin: 10rpx 25rpx;
+  display: flex;
+  align-content: center;
+  width: 300px;
+  height: 30px;
+  
+}
+.type-item {
+  padding: 2px;
+  border: 1rpx solid #888888;
+  border-radius: 100rpx;
+  width: 50px;
+  height: 15px;
+  font-size: 12px;
+  text-align: center;
+   
+}
+
+.article {
+  margin: 0 25rpx;
+}
+
+.publicTitle {
+  border: 1px solid gainsboro;
+  width: 300px;
+  border-radius: 15rpx;
+  margin-bottom: 10rpx;
+  background: gainsboro;
+}
+.publiccontent {
+  border: 1px solid gainsboro;
+  width: 300px;
+  border-radius: 10rpx;
+  background: gainsboro;
+}
+.ax {
+  box-sizing: border-box;
+}
+.chooseImageWrap {
+  display: block;
+  float: left;
+  justify-content: space-between;
+}
+.Plus {
+  margin-left: 10rpx;
+}
+
+.chooseImage,
+.img {
+  margin: 5px;
+  width: 90px;
+  height: 81px;
+  border: 1px solid gainsboro;
+  border-radius: 15rpx;
+}

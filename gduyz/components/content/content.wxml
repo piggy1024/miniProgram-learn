@@ -1,0 +1,67 @@
+<!--components/content/content.wxml-->
+<!-- 头像、昵称、内容 -->
+<view class="body-view">
+    <!--头像-->
+    <view class="left-view" data-usreId="{{articleUser}}" catchtap="_viewUserInfo2">
+<!--        <image class="user-icon skeleton-rect" mode="aspectFit" src="{{user_icon_tem}}" lazy-load="{{true}}"></image>-->
+        <view class="user-icon skeleton-rect" style="background-image:url({{user_icon_tem}}); background-size: cover;background-position: center;"></view>
+    </view>
+    <!--昵称-->
+    <view class="right-view" style="z-index: 30;">
+        <view class="nick-name skeleton-rect" data-usreId="{{articleUser}}" catchtap="_viewUserInfo2">{{hide? hideName:nick_name}}</view>
+        <!--内容-->
+        <view class="user-content-view">
+            <text class="skeleton-rect user-content-text" selectable='{{true}}' id="content" style="{{over?'-webkit-line-clamp: 6;':''}}">{{user_content}}</text>
+            <text catchtap="unfold" class="over-text" wx:if="{{unfold}}">{{over?'展开':'收起'}}</text>
+        </view>
+        <!--照片-->
+        <view class="photo-view">
+            <image wx:for="{{p_thumbnail_list}}" wx:key="index" lazy-load="{{true}}"
+                   src="{{item}}" mode="widthFix"
+                   class="skeleton-rect {{p_listLength > 2?(p_listLength === 4? 'just-4-photo':'more-2-photo'):(p_listLength === 2?'just-2-photo':'one-photo')}}"
+                   bindload="{{p_listLength > 1?'':'imageLoad'}}"
+                   style="width:{{p_listLength > 1?'h':imgWidth}}vw; height: {{p_listLength > 1?'h':imgHeight}};" data-src="{{index}}"
+                   catchtap="previewImg"></image>
+        </view>
+        <view catchtap="view_location" class="local_label skeleton-rect">{{local_name}}</view>
+        <!-- 时间、删除按钮、点赞评论按钮 -->
+        <view class='TDD-view'>
+            <label class="skeleton-rect TDD-view-label" style="color: darkgrey;">{{time}}</label>
+            <label catchtap="deleteArticle" wx:if="{{own}}" class="skeleton-rect delete TDD-view-label">删除</label>
+            <label catchtap="conceal" wx:if="{{isMime}}" class="skeleton-rect delete TDD-view-label">{{conceal?'公开':'隐藏'}}</label>
+            <view class="view-fa {{commentOut?'animation-slide-out':''}}" wx:if="{{commenting}}">
+                <view class="view-son {{commenting?'animation-slide-right':''}}">
+                    <view class="zan" catchtap="feedback">
+                        <image class="animation-{{choosing?'fade':''}}" src="/images/jb.png" mode="aspectFill"
+                               style="height: 38rpx;width:38rpx"></image>
+                        <text class="zfone">举报</text>
+                    </view>
+                    <view class="zan">
+                        <button open-type="share" data-content="{{user_content}}" data-articleId="{{articleId}}" class="shareButton"></button>
+                        <image src="/images/share.png" mode="aspectFill"
+                               style="height: 38rpx;width:38rpx"></image>
+                        <text class="zfone">分享</text>
+                    </view>
+                    <view class="zan" catchtap="zan">
+                        <image src="/images/heart.png" mode="aspectFill"
+                               style="height: 38rpx;width:38rpx"></image>
+                        <text class="zfone">{{isSupport?'取消':'赞'}}</text>
+                    </view>
+                    <view class="zan" catchtap="comment">
+                        <image src="/images/comment.png" mode="aspectFill"
+                               style="height: 38rpx;width:38rpx"></image>
+                        <text class="zfone">评论</text>
+                    </view>
+                </view>
+            </view>
+            <image class="skeleton-rect TDD-view-image" style="height: 100%;" bindtap='commenting' src='/images/more.png' mode="aspectFit"></image>
+        </view>
+        <!--点赞&评论-->
+        <view wx:if="{{supports.length>0||comments.length>0}}" class="triangle_up"></view>
+        <comment showAll="{{showAll}}" articleId="{{articleId}}"  bind:commentTap="commentTapCapture" supports="{{supports}}" comments="{{comments}}"></comment>
+    </view>
+</view>
+<view class="border"></view>
+
+
+

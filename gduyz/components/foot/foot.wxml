@@ -1,0 +1,3 @@
+<!--components/foot/foot.wxml-->
+<view class="footer footMarginTop" wx:if="{{news}}">以上内容来自广财新闻网</view>
+<view class="footer footMarginBu">@Copyright广财驿站</view>

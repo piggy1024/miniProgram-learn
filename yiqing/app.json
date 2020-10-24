@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/component-share/index",
+    
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/btn1/btn1",
+    "pages/selftable/selftable",
+    "pages/othertable/othertable",    
+    "pages/btn2/btn2",
+    "pages/btn3/btn3",
+    "pages/btn4/btn4"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "疫小宝",
+    "navigationBarTextStyle": "black"
+  },
+
+  "usingComponents": {
+    "van-button": "/dist/button/index",
+    "van-field": "/dist/field/index",
+    "van-action-sheet": "/dist/action-sheet/index",
+    "van-dialog": "/dist/dialog/index"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#959394",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/tab/index.png",
+        "selectedIconPath": "/images/tab/index_clicked.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "/images/tab/mine.png",
+        "selectedIconPath": "/images/tab/mine_clicked.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

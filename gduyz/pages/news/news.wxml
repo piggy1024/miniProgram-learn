@@ -1,0 +1,11 @@
+<!--pages/news/news.wxml-->
+<cu-custom bgColor="bg-gdu" isBack="true">
+</cu-custom>
+<view class="container">
+    <towxml nodes="{{article}}"></towxml>
+</view>
+<foot news="{{true}}"></foot>
+<wux-fab-button position="bottomRight" theme="calm" direction="vertical" bind:click="onClick"
+                spaceBetween="10"
+                buttons="{{buttons}}">
+</wux-fab-button>

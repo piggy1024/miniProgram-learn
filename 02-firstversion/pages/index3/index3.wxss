@@ -1,0 +1,14 @@
+
+page {
+  padding: 5px;
+  box-sizing: border-box;
+}
+input {
+  border: 1px solid gainsboro;
+}
+textarea {
+  border: 1px solid gainsboro;
+}
+.user {
+  padding: 5px;
+}

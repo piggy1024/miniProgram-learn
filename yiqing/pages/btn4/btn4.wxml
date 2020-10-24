@@ -1,0 +1,1 @@
+<button bindtap="jump" size='middle'>跳转到另一个小程序</button>

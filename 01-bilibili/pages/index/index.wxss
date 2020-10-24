@@ -1,0 +1,68 @@
+page{
+    color: #666;
+    padding: 10rpx;
+}
+/* 首页导航*/
+.nav_wrap{
+    color: black
+}
+
+.nav{
+    white-space: nowrap;
+    padding: 5rpx 0;
+
+}
+
+.nav_item{
+    padding: 20rpx 45rpx;
+    font-size: 30rpx;
+    display: inline-block;
+}
+
+.nav_item.active{
+    border-bottom: 5rpx solid #de688b;
+}
+
+.slides{
+    margin-top: 10rpx;
+}
+
+.slides swiper{
+    height: 220rpx;
+}
+
+.slides navigator{
+    width:100%;
+    height:100%;
+}
+
+.slides image{
+    width:100%;
+    height:100%;
+}
+
+/* 视频列表 */
+.video_wrap{
+    display: flex;
+    /* 换行 */
+    flex-wrap: wrap;
+    padding: 5rpx;
+    justify-content: space-between;
+
+}
+
+.video_item{
+    width: 48%;
+    height: 50%;
+    margin-bottom: 20rpx;
+}
+
+.video_image{
+    width: 100%;
+}
+
+.video_img .video_info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

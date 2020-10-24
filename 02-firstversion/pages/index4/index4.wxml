@@ -1,0 +1,53 @@
+<view class="page">
+    <scroll-view class="bg-white nav solid-bottom">
+    <view class="flex text-center">
+      <view wx:for="{{navItems}}" wx:for-index="idx" data-data="{{item}}" class="cu-item flex-sub {{item.index==tabCur?'text-green cur':''}}" bindtap='tabSelect' data-id="{{item.index}}" wx:key="{{index}}">
+        {{item.name}}
+      </view>
+    </view>
+  </scroll-view>
+  <scroll-view wx:if="{{showHots}}" scroll-x class="bg-white nav solids-bottom">
+    <view class="padding bg-white">
+      <view wx:for="{{hotItems}}" wx:for-index="idx" data-data="{{item}}" class="cu-tag round lg {{idx==hotCur?'bg-blue':''}}" bindtap='hotSelect' data-id="{{idx}}">
+        {{item}}
+      </view>
+    </view>
+  </scroll-view>
+   <scroll-view wx:if="{{showNew}}" scroll-x class="bg-white nav solids-bottom">
+    <view class="padding bg-white">
+      <view wx:for="{{hotItems}}" wx:for-index="idx" data-data="{{item}}" class="cu-tag round lg {{idx==hotCur?'bg-blue':''}}" bindtap='hotSelect' data-id="{{idx}}">
+        {{item}}
+      </view>
+    </view>
+  </scroll-view>
+   <scroll-view wx:if="{{showZonghe}}" scroll-x class="bg-white nav solids-bottom">
+    <view class="padding bg-white">
+      <view wx:for="{{hotItems}}" wx:for-index="index" data-data="{{item}}" class="cu-tag round lg {{idx==hotCur?'bg-blue':''}}" bindtap='hotSelect' data-id="{{idx}}" wx:key="{{index}}">
+        {{item}}
+      </view>
+    </view>
+  </scroll-view>
+    <!-- 模板 start -->
+    <template name="items">
+        <!-- 已发布文章内容 -->
+        <view class="article">
+            <!-- 文章序号和发布时间 -->
+            <view class="head">
+                <view class="num">#{{articleId}}</view>
+                <view class="time">{{articlePublishTime}}</view>
+            </view>
+            <!-- 文章内容 -->
+            <view class="body articleContent">{{articleContent}}</view>
+            <!-- 文章图片 -->
+            <view class="img"><image class="img_item" mode="aspectFit" src="https://zq1024.cn:8443/wx/upload/20191024/33_20191024220242_91e9ebb3gw1eutt1h5rj3j20sg0iun09.jpg" /></view>
+            <!-- 文章评论与点赞 -->
+            <view class="foot"></view>
+        </view>
+    </template>
+    <!-- 模板 end -->
+    <!-- 模板输出（10条） -->
+    
+    <view wx:for="{{list}}" wx:key="index" class="list" >
+        <template is="items" data="{{...item}}" />
+    </view>
+</view>

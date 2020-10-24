@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index4/index4",
+    "pages/home/home",
+    "pages/index8/index8",
+    "pages/index7/index7",
+    "pages/index5/index5",
+    "pages/index6/index6",
+    
+    "pages/index3/index3",
+    "pages/index2/index2",
+    "pages/index1/index1",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "广财社区",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+
+  "tabBar": {
+    "borderStyle": "black",
+    "backgroundColor": "#white",
+    "list": [
+      {
+        "pagePath": "pages/index4/index4",
+        "text": "首页",
+        "iconPath": "icon/34.png",
+        "selectedIconPath": "icon/35.png"
+      },
+      {
+        "pagePath": "pages/index6/index6",
+        "text": "发布",
+        "iconPath": "icon/38.png",
+        "selectedIconPath": "icon/61.png"
+      },
+      {
+        "pagePath": "pages/index7/index7",
+        "text": "我的",
+        "iconPath": "icon/38.png",
+        "selectedIconPath": "icon/61.png"
+      }
+    ]
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,31 @@
+
+<van-tabs bind:click="onClick">
+  <van-tab title="综合" name="综合" index="0"></van-tab>
+  <van-tab title="热门" name="热门" index="1"></van-tab>
+  <van-tab title="最新" name="最新" index="2"></van-tab>
+<van-search placeholder="请输入搜索内容" value="{{ value }}" background="#666"/>
+</van-tabs>
+ <!-- 模板 start -->
+    <template name="items">
+        <!-- 已发布文章内容 -->
+        <view class="article ">
+            <!-- 文章序号和发布时间 -->
+            <view class="head">
+                <view class="num">#{{articleId}}</view>
+                <view class="time">{{articlePublishTime}}</view>
+            </view>
+            <!-- 文章内容 -->
+            <view class="body articleContent">{{articleContent}}</view>
+            <!-- 文章图片 -->
+            <view class="img"><image class="img_item" mode="aspectFit" src="https://zq1024.cn:8443/wx/upload/20191024/33_20191024220242_91e9ebb3gw1eutt1h5rj3j20sg0iun09.jpg" /></view>
+            <!-- 文章评论与点赞 -->
+            <view class="foot"></view>
+        </view>
+    </template>
+    <!-- 模板 end -->
+    <!-- 模板输出（10条） -->
+    
+    <view wx:for="{{list}}" wx:key="index" class="list" >
+        <template is="items" data="{{...item}}" />
+    </view>
+    <view>{{type}}type</view>

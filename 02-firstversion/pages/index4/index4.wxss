@@ -1,0 +1,108 @@
+
+.page {
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Droid Sans Fallback",
+    "Microsoft Yahei", sans-serif;
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* 文章内容的样式 */
+.head {
+  /* 文章ID与发布时间同一行  与内容不同行 */
+  margin: 15rpx 15rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  border: 1rpx solid #9b9b9b;
+  margin: 20rpx;
+  border-radius: 20rpx;
+}
+
+.num {
+  font-size: 30rpx;
+  color: #9b9b9b;
+}
+.time {
+  font-size: 30rpx;
+  color: #9b9b9b;
+}
+.articleContent {
+  margin: 10rpx;
+  color: pink;
+}
+.img{
+  margin: 10rpx;
+  width: 100px;
+  height: 100px;
+  background: burlywood;
+}
+.img_item{
+  width: 100px;
+  height: 100px;
+}
+
+
+
+.nav {
+	white-space: nowrap;
+}
+.text-center {
+	text-align: center;
+}
+.flex {
+  font-size: 15px;
+	display: flex;
+}
+
+.flex-sub {
+	flex: 1;
+}
+.cu-item {
+	transition: all .6s ease-in-out 0s;
+	transform: translateX(0rpx)
+}
+.nav .cu-item.cur {
+	border-bottom: 4rpx solid;
+}
+.text-green {
+	color: var(--green);
+}
+
+.cu-tag {
+	font-size: 24rpx;
+	vertical-align: middle;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 0rpx 16rpx;
+	height: 48rpx;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+	white-space: nowrap;
+}
+
+.round {
+  border: 1px solid #9b9b9b;
+	border-radius: 5000rpx;
+}
+.padding {
+	padding: 30rpx;
+}
+.bg-blue {
+	background-color: var(--blue);
+	color: var(--white);
+}
+.bg-white {
+	background-color: var(--white);
+	color: var(--darkGray);
+}
+
+
+
+
+

@@ -1,0 +1,28 @@
+<view>
+    <view class='topWrap'>
+        <button class='close'>取消</button>
+        <button class='public' bindtap="">发布</button>
+    </view>
+    <view class="allContent">
+    <view class="type">
+        <view wx:for="{{type}}" wx:key="{{index}}" data-data="{{item}}" data-id="{{item.index}}" class="type-item" bindtap="typeSelect">{{item.name}}</view>
+    </view>
+    <view class="article">
+        <input placeholder="title" class='publicTitle'></input>
+        <textarea class='publiccontent' maxlength='-1' placeholder="新鲜事一起分享~"></textarea>
+    </view>
+    <view style='margin:8px 5.5px;'>
+        <view class='Plus'>可分享图片哦~</view>
+        <!-- 判断chooseImageUrl如果没有就不加载本模块，这是前面显示上传的图片的模块。 -->
+        <view wx:for="{{chooseImageUrl}}" wx:key="{{key}}" class='chooseImageWrap'>
+            <image mode="widthFit" class='chooseImage' src='{{item}}' bindtap='Close'></image>
+            <!-- <text class='chooseImageClose' data-index="{{index}}" bindtap='Close'>X</text> -->
+            <!-- data-index="{{index}}"之定义属性，后面删除图片的时候需要用到它 -->
+        </view>
+        <!-- 加号的框  chooseImageUrl.length当超过九张的时候就不在显示 -->
+        <view wx:if='{{chooseImageUrl.length<3}}' class="ax" style="cursor: pointer;" bindtap='paizhao'>
+            <image class="img" src="../../images/plus.png"></image>
+        </view>
+    </view>
+    </view>
+</view>

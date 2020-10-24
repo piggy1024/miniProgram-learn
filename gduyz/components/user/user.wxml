@@ -1,0 +1,16 @@
+<!--components/user/user.wxml-->
+<view class="UCenter-bg skeleton-rect" style="{{bgUrl?'background-image:url(' + bgUrl+')':''}}">
+    <view class="userinfo skeleton-rect">
+        <text class="userinfo-nickname">
+            {{username||"点击按钮登陆"}}
+        </text>
+        <label>
+            <view catchtap="lookAvatar" class="userinfo-avatar skeleton-rect" style="background-image:url({{avatar}}); background-size: cover;background-position: center;"></view>
+<!--            <image catchtap="lookAvatar" class='userinfo-avatar skeleton-rect' src='{{avatar}}'></image>-->
+<!--            <button open-type='getUserInfo' bindgetuserinfo='bindGetUserInfo'></button>-->
+        </label>
+    </view>
+</view>
+<view class="signature-text">
+    <text class="skeleton-rect" style=" width: 65%;">{{signature}}</text>
+</view>

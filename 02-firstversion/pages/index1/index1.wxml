@@ -1,0 +1,2 @@
+<view class="c">欢迎来到广财社区</view>
+<view class='enter' bindtap='onTapEnter'>进入社区</view>

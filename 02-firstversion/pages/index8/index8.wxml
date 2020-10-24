@@ -1,0 +1,7 @@
+<template name="contentItem">
+    <view>----template----</view>
+    <button size="mini">{{btnText}}</button>
+    <view>{{content}}</view>
+</template>
+<template is="contentItem" data="{{btnText: '警告', content:'hhhhh'}}"></template>
+<template is="contentItem" data="{{btnText: '登陆', content:'ggggg'}}"></template>

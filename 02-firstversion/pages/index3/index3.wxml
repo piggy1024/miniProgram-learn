@@ -1,0 +1,10 @@
+<view class="user" bind:tap="bindtap">
+    评论
+    <input type="text" class="input"></input>
+    评论
+    <textarea class="input"></textarea>
+</view>
+<view class="user" bind:tap="bindtap">
+    评论
+    <textarea class="input"></textarea>
+</view>

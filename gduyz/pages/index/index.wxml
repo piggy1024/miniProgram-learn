@@ -1,0 +1,145 @@
+<!--pages/index/index.wxml-->
+<wux-toptips id="wux-toptips"></wux-toptips>
+<add-tips></add-tips>
+<skeleton wx:if="{{showSkeleton}}" bgcolor="#3a8b94"></skeleton>
+<scroll-view scroll-y class="skeleton scrollPage" enable-flex="true" scroll-with-animation="true"
+             enable-back-to-top="true"
+>
+    <view class="bg-gdu"
+          style="position:fixed; top:0; width: 100%; height:{{menuButtonTop}}px;z-index: 800" bindtap="doubleClick"></view>
+
+    <swiper id="bannerSwiper" wx:key="property" class="bannerSwiper bg-gdu"
+            style="margin-top: {{menuButtonTop}}px"
+            previous-margin="40rpx" next-margin='40rpx' autoplay="true"
+            indicator-active-color='#fff' interval='6000' duration='300' bindchange='onChange'
+            circular='true'>
+        <block wx:key="property" wx:for="{{banners}}">
+            <swiper-item catchtap="intoView" data-item="{{item}}">
+                <view class="shown skeleton-rect {{index === xindex?'imageBanner':'imageBanner_small'}}" style="background-image:url({{item.url}});background-size: cover;background-position: center;"></view>
+                <view class="title">
+                    {{item.title}}
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="bannerDots flex_c abs">
+        <view wx:for="{{banners}}" wx:key="bannerId" class="dot {{index === xindex ? 'active':''}}">
+        </view>
+    </view>
+
+
+    <view id="menu" class="{{scrollTop>bannerSwiperHeight ? 'rel' : 'nav'}}"
+          style="margin-top: {{scrollTop>bannerSwiperHeight ? menuButtonTop: ''}}px;">
+        <form bindsubmit="formSubmit">
+            <view class="cu-bar search bg-gdu" style="top:-6px;">
+                <!--搜索-->
+                <view class="search-form round animation-fade skeleton-rect">
+                    <text class="cuIcon-search"></text>
+                    <input type="text" name="searchInput" placeholder="{{SearchPlaceholderTem}}"
+                           value="{{defaultSearchValue}}"
+                           confirm-type="search" bindconfirm="searchSubmit" bindfocus="searchFocus"
+                           bindblur="searchBlur"/>
+                </view>
+                <view style="width:{{scrollTop>menuButtonRight-searchButtonWidth? menuButtonRight-searchButtonWidth:scrollTop}}px;"></view>
+                <view class="action animation-reverse {{scrollTop>bannerSwiperHeight?'animation-slide-top':''}}"
+                      id="search">
+                    <button class="skeleton-rect cu-btn bg-white shadow-blur round  shadow-warp " form-type='submit'>
+                        <text wx:if="{{searching}}" class="cuIcon-loading1 iconfont-spin"></text>
+                        搜索
+                    </button>
+                </view>
+            </view>
+        </form>
+        <!--菜单-->
+        <scroll-view scroll-x class="cu-bar bg-white nav" style="top:-6px;">
+            <view class="flex text-center" style="border-bottom:1px solid #ccc">
+                <view class="cu-item flex-sub {{index==TabCur?'text-gdu cur':''}}" wx:for="{{navItems}}" wx:key="index"
+                      bindtap="tabSelect" data-id="{{item.index}}" data-modal="{{item.index}}" wx:if="{{!(searchShow&&index===4)}}">
+                    {{item.name}}
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+
+    <view class="{{scrollTop>bannerSwiperHeight ? 'fo' : ''}}"
+          style="height:{{scrollTop>bannerSwiperHeight ? menuHeight-6 : 0}}px"></view>
+    <view class="content-view" wx:if="{{!(confessionShow||schoolNewsShow)}}">
+        <content bind:supportHandle="supportCapture" bind:comment="commentCapture" bind:deleteFriend="deleteFriend"
+                 bind:TDD="TDD" bind:feedbackCapture="feedbackCapture"
+                 bind:commentTap="commentTapCapture"
+                 wx:for="{{searchShow?searchRes:friends}}" wx:key="contentId"
+                 user_icon="{{[item.friends.hide,item.friends.avatarUrl]}}"
+                 nick_name="{{item.friends.nickName}}" user_content="{{item.friends.content}}"
+                 photo_list="{{item.friends.photoList}}" postTime="{{item.friends.postTime}}"
+                 articleId="{{item.friends.contentId}}" articleUser="{{item.friends.userId}}"
+                 hideName="{{item.friends.hideName}}" local_name="{{item.friends.name}}"
+                 longitude="{{item.friends.longitude}}" latitude="{{item.friends.latitude}}"
+                 supports="{{item.hashMap.supports}}" comments="{{item.hashMap.comments}}"
+                 mask="{{mask}}"
+        >
+        </content>
+    </view>
+    <view class="content-view" wx:if="{{confessionShow}}">
+        <confession confessions="{{confessions}}"></confession>
+    </view>
+
+    <view class="content-view" wx:if="{{schoolNewsShow}}">
+        <newsCar wx:for="{{schoolNews}}" wx:key="newid" title="{{item.title}}" img="{{item.img}}" pushTime="{{item.pushTime}}" newsId="{{item.newid}}"></newsCar>
+    </view>
+
+
+    <view class="cu-load bg-cyan {{noData?'over':'loading'}}"></view>
+    <foot use="true"></foot>
+    <view class='cu-tabbar-height'></view>
+
+    <!--底部-->
+    <view class="cu-bar tabbar  bg-white foot skeleton-rect">
+        <view class="action text-cyan" bindtap="NavChange" data-cur="index">
+            <view class="cuIcon-homefill"></view>
+            首页
+        </view>
+        <view class="action text-gray add-action" bindtap="NavChange" data-cur="editor">
+            <button class="cu-btn cuIcon-add bg-cyan shadow"></button>
+            发布
+        </view>
+        <view class="action text-gray" bindtap="NavChange" data-cur="mime">
+            <view class="cuIcon-my">
+            </view>
+            我的
+        </view>
+    </view>
+
+    <view wx:if="{{searchShow}}" class="my-btnf">
+        <button class="cu-btn bg-cyan lg" bindtap="cancelSearch">取消搜索</button>
+    </view>
+</scroll-view>
+        <!--Popover -->
+<view style="z-index: 2000;position: fixed;"><wux-actionsheet id="wux-actionsheet"></wux-actionsheet></view>
+<view hidden="{{!wantComment}}" class="comment-mask"  catchtouchstart="hideCommentModal"></view>
+        <!--评论弹窗-->
+<view hidden="{{!wantComment}}" class="my-comment-box flex justify-between align-end padding-sm" style="bottom:{{keyboardHeight}}px;">
+    <textarea cursor-spacing='155rpx' class="comment-input" type='text' confirm-type="send" maxlength="100"
+              value="{{commentContent}}" placeholder="{{commentPlaceholder}}"
+              bindfocus="inputFocus" focus="{{wantComment}}" bindblur="inputBlur"
+              bindinput="commentTextarea" adjust-position="{{!wantComment}}"
+              show-confirm-bar="{{!wantComment}}">
+    </textarea>
+    <button class="comment-btn bg-blue" bindtap="confirmComment">发送</button>
+</view>
+        <!--多选举报-->
+<view class="cu-modal bottom-modal {{feedback?'show':''}}" bindtap="hideModal2">
+    <view class="cu-dialog" catchtap>
+        <view class="cu-bar bg-white-iso">
+            <view class="action text-red" bindtap="hideModal2">取消</view>
+            <view class="action text-gdu" bindtap="affirm">确定</view>
+        </view>
+        <view class="grid col-3 padding-sm bg-white-iso2">
+            <view wx:for="{{checkbox}}" class="padding-xs" wx:key="index">
+                <button class="cu-btn lg block {{item.checked ? 'bg-my-btn':'line-gdu-my'}}"
+                        bindtap="ChooseCheckbox" data-value="{{item.value}}">{{item.name}}
+                </button>
+            </view>
+        </view>
+        <view class="margin">请核实举报信息，切勿恶意举报</view>
+    </view>
+</view>

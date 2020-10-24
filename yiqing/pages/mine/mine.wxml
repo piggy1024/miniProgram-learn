@@ -1,0 +1,9 @@
+<view class="pic">
+<open-data type='userAvatarUrl' class='wxpic'></open-data>
+</view>
+
+
+<view class="graySpace"></view> 
+
+
+<button open-type="getUserInfo" bindtap="login" type="primary">登陆</button>

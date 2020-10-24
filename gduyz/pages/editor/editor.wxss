@@ -1,0 +1,14 @@
+/* pages/editor/editor.wxss */
+page {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.textarea_con {
+    font-size: 15px;
+}
+.bottom {
+    border-radius: 80rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+}

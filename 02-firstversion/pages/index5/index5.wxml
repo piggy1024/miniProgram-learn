@@ -1,0 +1,8 @@
+<view class="user" bind:tap="bindtap">
+    账号
+    <input type="text"  placeholder="请输入账号 "></input>
+</view>
+<view class="user" bind:tap="bindtap">
+    密码
+    <input type="text" placeholder="请输入密码 "></input>
+</view>

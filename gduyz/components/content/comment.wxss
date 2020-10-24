@@ -1,0 +1,44 @@
+/* components/content/comment.wxss */
+.comment-body {
+    text-align: justify;
+    text-align-last: left;
+    border-radius: 8rpx;
+    background: #f7f7f7;
+    font-size: 28rpx;
+    line-height: 1.5;
+    position: relative;
+    top: -3px;
+    margin-bottom: 5px;
+}
+
+.support {
+    padding: 3px;
+    word-break: break-all;
+    color: rgba(29, 98, 143, 0.84);
+}
+
+.support-border {
+    width: 250%;
+    height: 0;
+    transform: scale(0.4);
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid#c7c7c7;
+}
+
+.comment {
+    width: 100%;
+    color: rgba(29, 98, 143, 0.84);
+    padding: 2px;
+}
+
+.replayName:before {
+    content: '回复';
+    color: black;
+}
+
+.commentTime {
+    margin-left: 28rpx;
+    font-size: 24rpx;
+    color: darkgrey;
+}

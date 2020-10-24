@@ -1,0 +1,5 @@
+.c {
+  font-size: 150rpx;
+  color: aqua;
+  align-self: auto;
+}

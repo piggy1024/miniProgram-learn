@@ -1,0 +1,82 @@
+.graySpace{
+  padding-left: 40rpx;
+  background: #eee;
+  font-size: 12px;
+  min-height: 30rpx;
+}
+.wxpic{
+   display: flex;
+  flex-direction: column;
+  height: 200rpx;
+  width: 200rpx;
+  padding: 50rpx;
+}
+ 
+.header {
+    margin: 90rpx 0 90rpx 50rpx;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    width: 650rpx;
+    height: 300rpx;
+    line-height: 450rpx;
+}
+ 
+.header image {
+    width: 200rpx;
+    height: 200rpx;
+}
+ 
+.content {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+}
+ 
+.content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 40rpx;
+}
+ 
+.bottom {
+    border-radius: 80rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+}
+
+
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+}
+text{
+  font-size: 40rpx;
+  display: flex;
+  justify-content: center;
+}
+input{
+  border: 2rpx solid #9d9d9d;
+  height: 90rpx;
+  border-radius: 12rpx;
+  padding-left: 16rpx;
+}
+.phone_number{
+  margin: 16rpx 0;
+}
+.code{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 16rpx;
+}
+.btn_code{
+  background-color: #576b95;
+  color: white;
+  font-size: 30rpx;
+}
+
+.ishide{
+  display: none
+}

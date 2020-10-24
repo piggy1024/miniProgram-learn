@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "user": "../../components/user/user",
+    "content": "../../components/content/content",
+    "wux-actionsheet": "../../components/lib/actionsheet/index",
+    "wux-refresher": "../../components/lib/refresher/index",
+    "wux-toptips": "../../components/lib/toptips/index",
+    "wux-fab-button": "../../components/lib/fab-button/index",
+    "skeleton": "../../components/skeleton/skeleton"
+  },
+  "enablePullDownRefresh": true
+}

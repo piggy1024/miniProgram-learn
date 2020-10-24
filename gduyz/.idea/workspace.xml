@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f55537f-7d45-48a6-a101-4be4f643d579" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/car/car.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/car/car.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/car/car.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/car/car.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/list/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/list/list.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/list/list.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/list/list.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/weekCalendar/weekCalendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/weekCalendar/weekCalendar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/weekCalendar/weekCalendar.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/weekCalendar/weekCalendar.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/news/news.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/news/news.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/news/news.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/news/news.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/audio-player/Audio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/audio-player/audio-player.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/audio-player/audio-player.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/audio-player/audio-player.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/audio-player/loading.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/decode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/decode.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/decode.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/decode.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/img/img.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/img/img.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/img/img.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/img/img.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/latex/latex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/latex/latex.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/latex/latex.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/languages/bash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/languages/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/languages/htmlbars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/languages/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/languages/json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/languages/php.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/languages/python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/languages/scss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/languages/shell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/style/github.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/highlight/style/monokai.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/markdown/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/markdown/markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/markdown/plugins/emoji.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/markdown/plugins/ins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/markdown/plugins/latex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/markdown/plugins/mark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/markdown/plugins/sub.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/markdown/plugins/sup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/markdown/plugins/todo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/markdown/plugins/yuml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/Parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/Tokenizer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/domhandler/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/domhandler/node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/entities/decode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/entities/decode_codepoint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/entities/encode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/entities/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/entities/maps/decode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/entities/maps/entities.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/entities/maps/legacy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/entities/maps/xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/parse/parse2/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/style/main.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/style/theme/dark.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/style/theme/light.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/table/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/table/table.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/table/table.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/table/table.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/todogroup/todogroup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/todogroup/todogroup.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/todogroup/todogroup.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/todogroup/todogroup.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/towxml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/towxml.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/towxml.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/towxml.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/yuml/yuml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/yuml/yuml.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/yuml/yuml.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/towxml/yuml/yuml.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/time_util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/towxml/latex/latex.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/libs/CssHandler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/libs/MpHtmlParser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/libs/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/trees/handler.wxs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/trees/trees.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/trees/trees.json" beforeDir="false" afterPath="$PROJECT_DIR$/towxml/audio-player/audio-player.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/trees/trees.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/trees/trees.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/main.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/UI/main.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/confession/confession.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/confession/confession.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/confession/confession.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/confession/confession.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/confession/confession.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/confession/confession.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/comment.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/comment.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/comment.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/comment.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/content.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/content.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/content/content.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/content/content.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/foot/foot.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/foot/foot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/foot/foot.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/foot/foot.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/foot/foot.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/foot/foot.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lib/fab-button/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/lib/fab-button/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lib/popover/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/lib/popover/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lib/popover/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/lib/popover/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lib/popover/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/lib/popover/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lib/refresher/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/lib/refresher/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lib/wing-blank/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/lib/wing-blank/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/user/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/user/user.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/user/user.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/user/user.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/user/user.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/load/731.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/nm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/trigon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/wxdiscuss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/editor/editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/editor/editor.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/editor.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/banner.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/banner.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/show.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/show.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/mime/mime.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mime/mime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/mime/mime.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mime/mime.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/mime/mime.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mime/mime.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/one/one.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/one/one.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/one/one.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/one/one.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/one/one.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/one/one.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/user/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/user/user.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/user/user.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/user/user.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/user/user.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/view/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/view/view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/view/view.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/view/view.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/view/view.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/view/view.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/view/view.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/view/view.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/commonFunc.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/commonFunc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/util.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1U2yWyFhlxXGbgKTqGLcdxjqdor" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="F:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code_study\ColorUI-master\template" />
+      <recent name="D:\code_study\ColorUI-master\template\images" />
+      <recent name="D:\code_study\ColorUI-master\template\components\other" />
+      <recent name="D:\code_study\ColorUI-master\template\images\login" />
+      <recent name="D:\code_study\ColorUI-master\template\images\load" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code_study\ColorUI-master\template\components" />
+      <recent name="D:\code_study\ColorUI-master\template\components\share_image" />
+      <recent name="D:\code_study\ColorUI-master\template\components\add-tips" />
+      <recent name="D:\code_study\ColorUI-master\template\utils" />
+      <recent name="D:\code_study\ColorUI-master\template\images" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f55537f-7d45-48a6-a101-4be4f643d579" name="Default Changelist" comment="" />
+      <created>1574569019673</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574569019673</updated>
+      <workItem from="1574569022103" duration="26356000" />
+      <workItem from="1574598314804" duration="3900000" />
+      <workItem from="1574606693571" duration="2528000" />
+      <workItem from="1574641738320" duration="32906000" />
+      <workItem from="1574727636330" duration="5936000" />
+      <workItem from="1574734538880" duration="288000" />
+      <workItem from="1574922150197" duration="16779000" />
+      <workItem from="1574948073802" duration="7193000" />
+      <workItem from="1576928092123" duration="1927000" />
+      <workItem from="1578993783844" duration="2500000" />
+      <workItem from="1579570242705" duration="32019000" />
+      <workItem from="1579669406058" duration="37528000" />
+      <workItem from="1579783429032" duration="4000" />
+      <workItem from="1579783435488" duration="24599000" />
+      <workItem from="1579859117319" duration="4595000" />
+      <workItem from="1579876193561" duration="4200000" />
+      <workItem from="1579941151797" duration="5370000" />
+      <workItem from="1580003909388" duration="23899000" />
+      <workItem from="1580087315932" duration="40877000" />
+      <workItem from="1580175481137" duration="38572000" />
+      <workItem from="1580257210438" duration="19610000" />
+      <workItem from="1580290026989" duration="4817000" />
+      <workItem from="1580295501463" duration="11738000" />
+      <workItem from="1580353202064" duration="33389000" />
+      <workItem from="1580431472502" duration="38827000" />
+      <workItem from="1580483013560" duration="1090000" />
+      <workItem from="1580514919935" duration="51837000" />
+      <workItem from="1580606989345" duration="31481000" />
+      <workItem from="1580696067958" duration="26971000" />
+      <workItem from="1580732408704" duration="12865000" />
+      <workItem from="1580812698461" duration="7317000" />
+      <workItem from="1580968350229" duration="5407000" />
+      <workItem from="1581045902151" duration="16180000" />
+      <workItem from="1581129770603" duration="3293000" />
+      <workItem from="1581144600779" duration="20883000" />
+      <workItem from="1581214275327" duration="88277000" />
+      <workItem from="1581406585393" duration="24216000" />
+      <workItem from="1581434196503" duration="3365000" />
+      <workItem from="1581480457371" duration="31185000" />
+      <workItem from="1581521206355" duration="1606000" />
+      <workItem from="1581559863343" duration="25482000" />
+      <workItem from="1581657523402" duration="4971000" />
+      <workItem from="1581683809874" duration="7015000" />
+      <workItem from="1581730172100" duration="30179000" />
+      <workItem from="1581814762467" duration="8115000" />
+      <workItem from="1581828468568" duration="20687000" />
+      <workItem from="1581902265990" duration="31823000" />
+      <workItem from="1581997328777" duration="30500000" />
+      <workItem from="1582043534243" duration="675000" />
+      <workItem from="1582081162087" duration="21549000" />
+      <workItem from="1582176637986" duration="3280000" />
+      <workItem from="1582256668875" duration="873000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="518" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581699935844">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="518" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1581699935844" />
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580216134008">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1580216134008" />
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1581764382254">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1581764382254" />
+    <state x="449" y="149" width="642" height="534" key="find.popup" timestamp="1581407773436">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="149" width="642" height="534" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1581407773436" />
+    <state x="510" y="47" key="refactoring.ChangeSignatureDialog" timestamp="1581226502126">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="510" y="47" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1581226502126" />
+    <state x="425" y="189" width="672" height="677" key="run.anything.popup" timestamp="1582003222438">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" width="672" height="677" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1582003222438" />
+  </component>
+</project>

@@ -1,0 +1,11 @@
+@import"../index/show.wxss";
+@import "../mime/mime.wxss";
+
+.back-top {
+    position: fixed;
+    z-index: 4501;
+    left: 45rpx;
+    font-size: 32rpx;
+    color: white;
+}
+

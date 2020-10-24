@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/editor/editor",
+    "pages/mime/mime",
+    "pages/view/view",
+    "pages/login/login",
+    "pages/user/user",
+    "pages/one/one",
+    "pages/news/news"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3a8b94",
+    "navigationBarTitleText": "广财社区",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#036564",
+    "onReachBottomDistance": 500
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/editor/editor",
+        "text": "消息中心"
+      },
+      {
+        "pagePath": "pages/mime/mime",
+        "text": "我"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "./components/cu/cu-custom",
+    "content": "./components/content/content",
+    "skeleton": "./components/skeleton/skeleton",
+    "wux-popover": "./components/lib/popover/index",
+    "wux-actionsheet": "./components/lib/actionsheet/index",
+    "wux-toptips": "./components/lib/toptips/index",
+    "confession": "./components/confession/confession",
+    "wave": "./components/wave/wave",
+    "foot": "./components/foot/foot",
+    "add-tips": "./components/add-tips/index",
+    "towxml": "/towxml/towxml"
+  },
+  "sitemapLocation": "sitemap.json"
+}

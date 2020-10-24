@@ -1,0 +1,26 @@
+<view class="cu-timeline" wx:for="{{confessionsHan}}" wx:key="id">
+    <view class="cu-time" wx:if="{{confessionsHan[index-1].postTime !== item.postTime}}">{{item.postTime}}</view>
+    <view class="cu-item text-red cuIcon-likefill">
+        <view class="cu-capsule" style="position: absolute; top:-0rpx;z-index: 999;">
+            <view class="cu-tag bg-red sm">
+                <text class="cuIcon-likefill"></text>
+            </view>
+            <view class="cu-tag line-red sm">
+                #{{item.confessionId}}
+            </view>
+        </view>
+        <view class="content">
+            <view class="cu-capsule radius" wx:if="{{item.fromName.length>0}}">
+                <view class="cu-tag line-red">来自</view>
+                <view class="cu-tag bg-red">{{item.fromName}}</view>
+            </view>
+            <view class="{{item.fromName.length>0?'margin-top':''}}" style="text-indent:2em;">
+                <text class="text-red text-bold" wx:if="{{item.toName.length > 0}}">{{item.toName}}</text>
+                <text>{{item.contend}}</text>
+            </view>
+            <view wx:if="{{item.imgs}}" class="confessionImg margin-top-sm" style="background-image:url({{item.imgs}}); background-size: cover;background-position: center;">
+            </view>
+        </view>
+<!--        <image wx:if="{{item.imgs}}" class="confessionImg margin-top-sm" src="{{item.imgs}}" mode="aspectFill"></image>-->
+    </view>
+</view>

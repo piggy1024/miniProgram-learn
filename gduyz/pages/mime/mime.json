@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "user": "../../components/user/user",
+    "wux-fab-button": "../../components/lib/fab-button/index"
+  },
+  "enablePullDownRefresh": true
+}

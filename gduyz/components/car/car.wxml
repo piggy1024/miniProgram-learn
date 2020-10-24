@@ -1,0 +1,13 @@
+<!--components/car/car.wxml-->
+<view class="cu-card case" catchtap="viewNews">
+    <view class="cu-item shadow">
+        <view class="image bg-grey" style="min-height: 200rpx;">
+            <image src="{{img}}"
+                   mode="widthFix"></image>
+            <view class="cu-tag bg-cyan">{{pushTimeAF}}</view>
+            <view class="cu-bar bg-shadeBottom">
+                <text class="text" style="text-align: justify;">{{title}}</text>
+            </view>
+        </view>
+    </view>
+</view>

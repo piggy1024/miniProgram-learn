@@ -1,0 +1,9 @@
+/* components/confession/confession.wxss */
+@import"../../UI/main.wxss";
+@import "../../UI/icon.wxss";
+
+.confessionImg {
+    width: 100%;
+    height: 350rpx;
+    overflow: hidden;
+}

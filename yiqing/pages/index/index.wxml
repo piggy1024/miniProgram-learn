@@ -1,0 +1,32 @@
+<view class="head">
+<image src="/images/girl.jpg" class="pic"></image>
+</view>
+
+<view class="content">
+
+<view class="btn1 box" bindtap="btn1">
+<view class="title">健康自查上报</view>
+<view class="details">普查所有市民健康状况，针对特定症状，社区讲根据情况安排相关服务</view>
+</view>
+
+<view class="line"></view>
+
+<view class="btn2 box" bindtap="btn2">
+<view class="title"><h1>疫情线索上报</h1></view>
+<view class="details">如发现身边与新冠病毒疫情相关线索。请如实上报详细情况</view></view>
+
+<view class="line"></view>
+
+<view class="btn3 box" bindtap="btn3">
+<view class="title">口罩预约购买</view>
+<view class="details">位满足广州市民购买口罩的需要，提供线上预约快递到家的服务</view>
+</view>
+
+<view class="line"></view>
+
+<view class="btn4 box" bindtap="btn4">
+<view class="title">在线免费问诊</view>
+<view class="details">广州多家医院与第三方医疗平台免费为广州市民提供在线疫情问诊服务</view>
+</view>
+
+</view>

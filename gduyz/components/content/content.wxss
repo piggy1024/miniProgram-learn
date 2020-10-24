@@ -1,0 +1,287 @@
+
+.left-view {
+    width: 16vw;
+    z-index: 19;
+}
+
+.body-view {
+    display: flex;
+    flex: 2;
+}
+
+.user-icon {
+    width: 80rpx;
+    height: 80rpx;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+    border-radius: 10rpx;
+}
+
+.right-view {
+    width: 82vw;
+    margin-top: 25rpx;
+}
+
+.nick-name {
+    font-weight: bold;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    font-size: 32rpx;
+    color: rgba(29, 98, 143, 0.84);
+    margin-bottom: 5rpx;
+    text-align: justify;
+}
+
+.user-content-view {
+    margin: 3px 3.5vw 3px 0;
+}
+
+.user-content-text {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 28rpx;
+    text-align: justify;
+    text-overflow: initial;
+    -ms-text-overflow: initial;
+}
+
+/*照片*/
+.photo-view {
+    margin-bottom: 4px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.more-2-photo {
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+    width: 26.5vw;
+    height: 26.5vw;
+    text-align: center;
+}
+
+.just-4-photo {
+    margin-top: 1vw;
+    margin-right: 1vw;
+    width: 28vw;
+    height: 28vw;
+    text-align: center;
+}
+
+.just-2-photo {
+    margin-left: 1vw;
+    width: 38vw;
+    height: 38vw;
+}
+
+.one-photo {
+    height: 40vw;
+}
+
+/* 时间、删除、点赞评论 */
+.TDD-view {
+    position: relative;
+    top: -2px;
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.TDD-view-label {
+    white-space: nowrap;
+    font-size: 24rpx;
+    /*margin-left: 10rpx;*/
+}
+
+.TDD-view-image {
+    z-index: 70;
+    width: 60rpx;
+    margin-right: 20rpx;
+    margin-left: auto;
+}
+
+.view-son {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    display: -webkit-flex; /* Safari */
+    flex-direction: row; /*容器内项目的排列方向(默认横向排列 row)*/
+    flex-wrap: nowrap; /*容器内项目换行方式*/
+    align-items: center; /*项目在交叉轴上如何对齐*/
+    align-content: center; /*定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用*/
+    border-radius: 3px;
+    background: rgba(47, 47, 47, 1);
+    height: 100%;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+}
+
+/* 箭头朝右的三角形效果： */
+.view-fa:before {
+    content: '';
+    margin-top: 25rpx;
+    width: 0;
+    height: 0;
+    border-width: 10rpx 0 10rpx 10rpx;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(47, 47, 47, 1);
+}
+
+.view-fa {
+    z-index: 3000;
+    position: absolute;
+    /*z-index: 30;*/
+    right: 80rpx;
+    width: 100%;
+    height: 100%;
+    -ms-flex-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.animation-slide-right {
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-name: slide-right
+}
+
+.animation-slide-out {
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-name: slide-out
+}
+
+@keyframes slide-out {
+    0% {
+        opacity: 1;
+        width: 100%;
+        direction: revert;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animation-reverse {
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-direction: reverse
+}
+
+.animation-slide-left {
+    animation-name: slide-left
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.zan {
+    position: relative;
+    margin-right: 15rpx;
+    text-align: center;
+    margin-left: 15rpx;
+    margin-top: 15rpx;
+    flex: 1;
+    white-space: nowrap;
+    height: 80%;
+}
+
+.shareButton {
+    background: transparent;
+    position:absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.zfone {
+    text-align: center;
+    color: white;
+    font-size: 24rpx;
+}
+
+.animation-fade {
+    animation-name: fade;
+    animation-duration: .5s;
+    animation-timing-function: linear
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+/*实现0.5px的border*/
+.border {
+    width: 250%;
+    height: 0;
+    transform: scale(0.4);
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid#c7c7c7;
+}
+
+.over-text {
+    font-size: 28rpx;
+    color: rgba(29, 98, 143, 0.84);
+}
+
+.triangle_up {
+    position: relative;
+    left: 10px;
+    top: -3px;
+    width: 0;
+    height: 0;
+    border-width: 0 7px 7px;
+    border-style: solid;
+    border-color: transparent transparent#f7f7f7; /* 红 透明 透明 */
+}
+
+.local_label {
+    margin: 5px 5px 0 0;
+    color: rgba(29, 98, 143, 0.84);
+    font-size: 24rpx;
+    line-height: 1.5;
+}
+
+.delete {
+    margin-left: 45rpx;
+    color: rgba(29, 98, 143, 0.84);
+}

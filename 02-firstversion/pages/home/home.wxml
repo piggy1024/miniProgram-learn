@@ -1,0 +1,20 @@
+<!-- 1事件处理的回顾 -->
+<button bindtap='handleBtnClick' size="mini">按钮</button>
+<button bind:tap='handleBtnClick' size="mini">按钮</button>
+<button catch:tap='handleBtnClick' size="mini">按钮</button>
+<!-- 2常见事件 -->
+<view class="box" bind:touchstart="handleTouchStart" bind:touchmove="handleTouchMove" bind:touchend="handleTouchEnd" bind:tap="handleTap" bind:longpress='handleLongpress'></view>
+<!-- 3事件对象的分析 -->
+<button id='btn' size="mini" bind:tap="handleEventClick">事件点击</button>
+<view class="outer" id="outer" bind:tap="handleOuter">
+    外层的view
+    <view class="iner" id='inner' bind:tap="handleInner">内层的view</view>
+</view>
+<!-- 4事件的传递参数 -->
+<view class="container">
+    <block wx:for="{{titles}}" wx:key="{{index}}">
+        <view class="item" bind:tap="handleItemClick" data-index='{{index}}' data-item='{{item}}'>
+            {{item}}
+        </view>
+    </block>
+</view>

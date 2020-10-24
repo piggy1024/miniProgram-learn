@@ -1,0 +1,19 @@
+<!--components/content/comment.wxml-->
+<view class="comment-body" style="padding: {{comments.length>0||supports.length>0?6:0}}px;">
+    <view class="support skeleton-rect" wx:if="{{supports.length>0}}">
+        <text>♡</text>
+        <text wx:for="{{supports}}" wx:key="time" data-usreId="{{item.userId}}" catchtap="_viewUserInfo" wx:if="{{showAll?true:index<5}}">{{item.nickName}}{{index+1===supports.length?'':','}}</text>
+        <text catchtap="viewAllSupport">{{!showAll&&supports.length>5?'...等'+supports.length+'人觉得很赞(点击查看所有)':''}}</text>
+        <view wx:if="{{comments.length>0}}" class="support-border"></view>
+    </view>
+    <view class="comment skeleton-rect" wx:for="{{commentsHandle}}" wx:key="index" wx:if="{{showAll?true:index<5}}">
+        <text data-usreId="{{item.commentUserId}}" catchtap="_viewUserInfo">{{item.commentName}}</text>
+        <text wx:if="{{item.replayUserId>0}}" class="replayName" data-usreId="{{item.replayUserId}}" catchtap="_viewUserInfo">{{item.replayName}}</text>:
+        <text catchtap='shortTap' data-replayId="{{item.commentUserId}}" data-commentId="{{item.commentId}}"
+              data-replayName="{{item.commentName}}" data-articleId="{{articleId}}" data-content="{{item.comment}}"
+              data-index="{{index}}" bindlongpress="longTap"
+              style="color:black;">{{item.comment}} <text class="commentTime">{{item.commentTime}}</text></text>
+<!--        <text catchtap="viewAllSupport">{{index===(isSpreadComment?commentsHandle.length-1:4)&&commentsHandle.length>20? '\n...'+(isSpreadComment?'收起':'(点击查看')+commentsHandle.length+'条评论)':''}}</text>-->
+        <text catchtap="viewAllSupport" hidden="{{showAll}}">{{index===4&&commentsHandle.length>5? '\n...'+'(点击查看'+commentsHandle.length+'条评论)':''}}</text>
+    </view>
+</view>

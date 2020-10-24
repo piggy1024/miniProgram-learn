@@ -1,0 +1,85 @@
+.bg {
+  height: 150px;
+  background-color: #f5eaea;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+}
+
+.headIcon {
+  margin: 30rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+.touxiang {
+  margin-left: 40px;
+  border: #0c6ed1 solid 1rpx;
+}
+.userPhoto {
+  width: 70px;
+  height: 70px;
+  border: #888 1rpx solid;
+}
+.userPublicInfo {
+  display: flex; /*设置显示样式**/
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 70px;
+  font-size: 25rpx;
+  color: darkgrey;
+}
+
+.login {
+  display: flex;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 15rpx;
+  justify-content: center;
+}
+
+.button {
+  margin: 10px;
+  font-size: 14px;
+  text-align: center;
+  background: #fff;
+  border-radius: 15rpx;
+}
+
+.head image {
+  border-radius: 50%;
+}
+
+.hr {
+  width: 100%;
+  height: 15px;
+  background-color: #f4f5f6;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.detail2 {
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  height: 50px;
+  line-height: 50px;
+  color: #888;
+}
+
+.line {
+  border: 1px solid #ccc;
+  opacity: 0.2;
+}

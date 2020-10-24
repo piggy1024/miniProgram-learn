@@ -1,0 +1,15 @@
+.title{
+  font-size: 50rpx;
+  font-weight: bold;
+  justify-content: center;
+  margin-bottom: 50rpx;
+  text-align: center;
+}
+.content{
+  font-size: 35rpx;
+  color: gainsboro;
+}
+.rule{
+  font-size: 35rpx;
+  color: rgb(240, 144, 54);
+}

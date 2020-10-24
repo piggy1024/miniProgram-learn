@@ -1,0 +1,90 @@
+<!--pages/mime/mime.wxml-->
+<skeleton wx:if="{{showSkeleton}}" bgcolor="#3a8b94"></skeleton>
+<view class="skeleton bg-white">
+<view class="my-top skeleton-rect" style="height:{{CustomBar}}px;">
+    <view class="UCenter-bg" style="{{userIn.bgUrl?'background-image:url(' + userIn.bgUrl+')':''}}">
+    </view>
+</view>
+
+<wux-toptips id="wux-toptips"></wux-toptips>
+    <user bgUrl="{{userIn.bgUrl}}" username="{{userIn.afterName}}" avatar="{{userIn.afterAvatarUrl}}"
+          signature="{{userIn.signature}}"></user>
+
+<content bind:supportHandle="supportCapture" bind:comment="commentCapture" bind:deleteFriend="deleteFriend"
+         bind:TDD="TDD" bind:feedbackCapture="feedbackCapture" bind:conceal="concealCapture" isMime="{{true}}"
+         bind:commentTap="commentTapCapture" conceal="{{item.friends.conceal}}"
+         wx:for="{{friends}}" wx:key="contentId"
+         user_icon="{{[item.friends.hide,item.friends.avatarUrl]}}"
+         nick_name="{{item.friends.nickName}}" user_content="{{item.friends.content}}"
+         photo_list="{{item.friends.photoList}}" postTime="{{item.friends.postTime}}"
+         articleId="{{item.friends.contentId}}" articleUser="{{item.friends.userId}}"
+         hideName="{{item.friends.hideName}}" local_name="{{item.friends.name}}"
+         longitude="{{item.friends.longitude}}" latitude="{{item.friends.latitude}}"
+         supports="{{item.hashMap.supports}}" comments="{{item.hashMap.comments}}"
+         mask="{{mask}}"
+>
+</content>
+
+    <button hidden="{{userId>0}}" class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+        授权登录
+    </button>
+    <view wx:if="{{userId>0}}" class="cu-load bg-cyan {{noData?'over':'loading'}}"></view>
+    <foot use="{{true}}"></foot>
+
+    <view class='cu-tabbar-height'></view>
+<view class="cu-bar tabbar  bg-white foot skeleton-rect">
+    <view class="action text-gray" bindtap="NavChange" data-cur="index">
+        <view class="cuIcon-homefill"></view>
+        首页
+    </view>
+    <view class="action text-gray add-action" bindtap="NavChange" data-cur="editor">
+        <button class="cu-btn cuIcon-add bg-cyan shadow"></button>
+        发布
+    </view>
+    <view class="action text-cyan" bindtap="NavChange" data-cur="mime">
+        <view class="cuIcon-my">
+        </view>
+        我的
+    </view>
+</view>
+</view>
+
+<view style="z-index: 2000;position: fixed;">
+    <wux-actionsheet id="wux-actionsheet"></wux-actionsheet>
+</view>
+
+
+<view hidden="{{!wantComment}}" class="comment-mask" catchtouchstart="hideCommentModal"></view>
+        <!--评论弹窗-->
+<view hidden="{{!wantComment}}" class="my-comment-box flex justify-between align-end padding-sm"
+      style="bottom:{{keyboardHeight}}px;">
+    <textarea cursor-spacing='155rpx' class="comment-input" type='text' confirm-type="send" maxlength="100"
+              value="{{commentContent}}" placeholder="写你所想"
+              bindfocus="inputFocus" focus="{{wantComment}}" bindblur="inputBlur"
+              bindinput="commentTextarea" adjust-position="{{!wantComment}}"
+              show-confirm-bar="{{!wantComment}}">
+    </textarea>
+    <button class="comment-btn bg-blue" bindtap="confirmComment">{{isreviseName?'确定':'发送'}}</button>
+</view>
+<view class="cu-modal bottom-modal {{feedback?'show':''}}" bindtap="hideModal2">
+    <view class="cu-dialog" catchtap>
+        <view class="cu-bar bg-white-iso">
+            <view class="action text-red" bindtap="hideModal2">取消</view>
+            <view class="action text-gdu" bindtap="affirm">确定</view>
+        </view>
+        <view class="grid col-3 padding-sm bg-white-iso2">
+            <view wx:for="{{checkbox}}" class="padding-xs" wx:key="index">
+                <button class="cu-btn lg block {{item.checked ? 'bg-my-btn':'line-gdu-my'}}"
+                        bindtap="ChooseCheckbox" data-value="{{item.value}}">{{item.name}}
+                </button>
+            </view>
+        </view>
+        <view class="margin">请核实举报信息，切勿恶意举报</view>
+    </view>
+</view>
+
+
+<wux-fab-button wx:if="{{userId>0}}" position="bottomRight" theme="calm" direction="vertical"
+                spaceBetween="10"
+                buttons="{{buttons}}" bind:click="onClick" ></wux-fab-button>
+

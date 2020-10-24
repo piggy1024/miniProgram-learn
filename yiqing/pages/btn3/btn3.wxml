@@ -1,0 +1,17 @@
+<view class="page">
+<view class="title">关于口罩预约购买的说明</view>
+
+<view>
+<text class="content" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;为满足广州市民购买口罩的需要，广州市防控办委托广药集团为广大群众提供线上预约购买及配送服务。</text>
+</view>
+<view>
+<text class="content" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;2月6日起，系统正式投入运行，预约购买规则如下:</text>
+</view>
+<text>\n</text>
+<view class="rule">
+1、每天晚上8点开始，市民可凭身份证等有效证件预约口罩。<text>\n</text>
+2、每人每次可预约购买普通口罩10个或者普通n95口罩5个（每日上线的口罩类型根据采购和储备的情况而定）。预约以天骄预约等级的先后次序排序，先到先得。<text>\n</text>
+3、预约登记时填写的同一手机号码或者同一邮寄地址如果当天购买成功，未来10天不可再预约。<text>\n</text>
+4、个人预约信息将在个人中心--我的预约中查询，如果预约成功会出现付款界面，请按提示完成付款。请您及时付款，如超时未支付，订单将失效。
+</view>
+</view>

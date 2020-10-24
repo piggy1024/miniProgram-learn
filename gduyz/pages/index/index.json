@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "newsCar": "../../components/car/car"
+  },
+  "enablePullDownRefresh": true
+}
